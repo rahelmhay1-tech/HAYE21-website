@@ -1,0 +1,21 @@
+body {font-family: Arial, sans-serif; margin: 0; background: #f4f6f9; transition: background 0.3s, color 0.3s;}
+header {background: #002b5b; color: #fff; padding: 20px; text-align: center;}
+nav {background: #014f86; padding: 15px; text-align: center;}
+nav a {color: #fff; padding: 12px 20px; text-decoration: none; font-weight: bold; transition: background 0.3s;}
+nav a:hover {background: #012a4a; border-radius: 5px;}
+.hero {background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1521791136064-7986c2920216'); background-size: cover; background-position: center; padding: 120px 20px; color: white; text-align: center;}
+.hero h1 {font-size: 48px; margin-bottom: 15px; animation: fadeInDown 1s ease forwards; opacity: 0;}
+.hero p {font-size: 18px; max-width: 700px; margin: 0 auto; animation: fadeIn 1.5s ease forwards; opacity: 0;}
+.section {padding: 60px 20px; max-width: 1000px; margin: auto; opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease, transform 0.8s ease;}
+.card-container {display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;}
+.card {background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;}
+.card:hover {transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.15);}
+footer {background: #002b5b; color: white; text-align: center; padding: 20px; margin-top: 40px;}
+.team-container {display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 20px;}
+.team-member {background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.08);}
+.team-member img {border-radius:50%; width:120px; height:120px; object-fit:cover; margin-bottom:12px;}
+.dark-mode {background:#121212; color:#e0e0e0;}
+.dark-mode header, .dark-mode nav, .dark-mode footer {background:#0d1b2a;}
+.toggle-btn {position:fixed; bottom:20px; right:20px; background:#014f86; color:white; border:none; padding:12px 18px; border-radius:50px; cursor:pointer; z-index:100;}
+@keyframes fadeInDown {0%{opacity:0; transform: translateY(-30px);} 100%{opacity:1; transform: translateY(0);}}
+@keyframes fadeIn {0%{opacity:0;}100%{opacity:1;}}
